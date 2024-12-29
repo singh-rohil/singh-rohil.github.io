@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>About Me</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Rohil <span>Singh</span></div>
+            <div class="links">
+                <div class="link"><a href="index.html">Home</a></div>
+                <div class="link"><a href="about.html">About</a></div>
+                <div class="link"><a href="awards.html">Awards</a></div>
+                <div class="link"><a href="contact.html">Contact</a></div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="any-section">
+        <h1 class="any-header" data-aos="zoom-in" data-aos-duration="1000">About Me</h1>
+
+        <!-- Education Section -->
+        <div class="any-content">
+            <h2 data-aos="fade-up" data-aos-duration="1000">Education</h2>
+            <ul>
+                <li class="education-item" data-aos="fade-up" data-aos-duration="1000">
+                    <img src="neu.png" alt="Northeastern University" class="education-logo">
+                    <div>
+                        <strong>Northeastern University Khoury College</strong> || <b>Boston, MA</b><br>
+                        Candidate for Bachelor of Science – Computer Science<br>
+                        <em>Sep 2023 – May 2027</em><br>
+                        Relevant Coursework: Fundamentals of Computer Science, Discrete Structures, Mathematics of Data Models, Object-Oriented Design, Introduction to Databases
+                    </div>
+                </li>
+                <li class="education-item" data-aos="fade-up" data-aos-duration="1000">
+                    <img src="rvcc.png" alt="Raritan Valley Community College" class="education-logo">
+                    <div>
+                        <strong>Raritan Valley Community College</strong> || <b>Branchburg, NJ</b><br>
+                        Associate’s Degree – General Science Pre-Health (Dual-Enrollment)<br>
+                        <em>Sep 2020 – May 2023</em><br>
+                        Relevant Coursework: Calculus I & II, English Composition I & II, General Physics I & II, Human Anatomy & Physiology I & II
+                    </div>
+                </li>
+                <li class="education-item" data-aos="fade-up" data-aos-duration="1000">
+                    <img src="scvths.png" alt="Academy for Health and Medical Sciences" class="education-logo">
+                    <div>
+                        <strong>Academy for Health and Medical Sciences</strong> || <b>Bridgewater, NJ</b><br>
+                        High School Diploma<br>
+                        <em>Sep 2019 – Jun 2023</em>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Experience Section -->
+        <h2 data-aos="fade-up" data-aos-duration="1000">Experience</h2>
+        <div class="container">
+            <div class="timeline">
+                <ul>
+                    <li onclick="openPopup('popup-outlier')">
+                        <div class="timeline-content">
+                            <h3 class="date">May 2024 - Present</h3>
+                            <h1>Outlier AI</h1>
+                        </div>
+                    </li>
+                    <li onclick="openPopup('popup-ems')">
+                        <div class="timeline-content">
+                            <h3 class="date">Jul 2022 - Aug 2023</h3>
+                            <h1>East Millstone First <br> Aid Squad</h1>
+                        </div>
+                    </li>
+                    <li onclick="openPopup('popup-math')">
+                        <div class="timeline-content">
+                            <h3 class="date">Oct 2021 - Aug 2023</h3>
+                            <h1>Mathnasium of Hillsborough</h1>
+                        </div>
+                    </li>
+                    <li onclick="openPopup('popup-waksman')">
+                        <div class="timeline-content">
+                            <h3 class="date">Sep 2020 - Aug 2023</h3>
+                            <h1>Rutgers University Waksman Institute</h1>
+                        </div>
+                    </li>
+                    <li onclick="openPopup('popup-ctc')">
+                        <div class="timeline-content">
+                            <h3 class="date">May 2018 - Present</h3>
+                            <h1>Coaching To Contribute LLC</h1>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Popups -->
+
+        <div class="popup" id="popup-outlier">
+            <div class="popup-content">
+                <span class="close-btn" onclick="closePopup('popup-outlier-2024')">&times;</span>
+                <h3>Outlier AI</h3>
+                <h4>Generative Mathematics AI Engineer</h4>
+                <p>Through project-based learning, I generated queries to test the boundaries of AI chatbots. 
+                </p>            
+        </div>
+        </div>
+
+        <div class="popup" id="popup-ems">
+            <div class="popup-content">
+                <span class="close-btn" onclick="closePopup('popup-ems')">&times;</span>
+                <h3>East Millstone First Aid Squad</h3>
+                <p>Delivered prompt emergency medical care in various settings.</p>
+            </div>
+        </div>
+
+        <div class="popup" id="popup-waksman">
+            <div class="popup-content">
+                <span class="close-btn" onclick="closePopup('popup-waksman')">&times;</span>
+                <h3>Rutgers University Waksman Institute</h3>
+                <p>Conducted DNA analysis and published findings on the NCBI database.</p>
+            </div>
+        </div>
+
+        <div class="popup" id="popup-math">
+            <div class="popup-content">
+                <span class="close-btn" onclick="closePopup('popup-waksman')">&times;</span>
+                <h3>Mathnasium of Hillsborough</h3>
+                <p>Conducted DNA analysis and published findings on the NCBI database.</p>
+            </div>
+        </div>
+
+        <div class="popup" id="popup-ctc">
+            <div class="popup-content">
+                <span class="close-btn" onclick="closePopup('popup-ctc')">&times;</span>
+                <h3>Coaching to Contribute LLC</h3>
+                <p>Co-Founder. Led quarterly clothing drives and developed the nonprofit’s website.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer style="padding: 20px; text-align: center;">
+        <p>&copy; 2024 Rohil Singh. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 0,
+            duration: 1000,
+            once: true
+        });
+    </script>
+</body>
+</html>
