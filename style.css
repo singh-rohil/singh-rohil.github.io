@@ -526,3 +526,122 @@ html {
 .close-btn:hover {
     color: red;
 }
+
+.contact-bubbles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Spacing between bubbles */
+    margin-top: 20px; /* Space below the "Contact Me" header */
+    margin-bottom: 30px;
+}
+
+.bubble {
+    width: 275px; /* Width of each bubble */
+    height: 90px; /* Height of each bubble */
+    background-color: rgb(111, 167, 206); /* Bubble background color */
+    color: white; /* Text color */
+    border-radius: 10px; /* Rounded corners */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover animation */
+}
+
+.bubble:hover {
+    transform: scale(1.1); /* Slightly enlarge the bubble on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+.bubble h3 {
+    font-size: 1.2rem; /* Title font size */
+    margin-bottom: 5px;
+}
+
+.bubble p {
+    font-size: 1rem; /* Content font size */
+    margin: 0;
+}
+
+.bubble .email-link {
+    font-size: 1rem;
+    color: white; /* Make the email link text white */
+    text-decoration: none; /* Remove underline */
+}
+
+.bubble .email-link:hover {
+    text-decoration: underline; /* Add underline on hover for better interactivity */
+}
+
+/* Awards Section */
+.award-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.award-item {
+    width: calc(33% - 40px); /* Adjust width to fit three per row */
+    text-align: center;
+    background: white;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform-origin: center; /* Ensure scaling happens from the center */
+    cursor: pointer; /* Indicate interactivity */
+}
+
+/* Hover Effect */
+.award-item:hover {
+    transform: scale(1.1) !important; /* Ensure hover takes priority */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Enhance shadow */
+}
+
+.award-item img {
+    max-width: 335px;
+    height: 260px;
+    border-radius: 5px;
+}
+
+.award-item h2 {
+    font-size: 1.5rem;
+    color: rgb(0, 129, 221);
+    margin: 5px 0 0px;
+    line-height: 1.1;
+}
+
+.award-item p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+    text-align: center;
+    margin: 0px 0 5px;
+}
+
+.award-item h3 {
+    text-align: center;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Ensure responsiveness */
+@media (max-width: 768px) {
+    .award-item {
+        width: calc(50% - 20px); /* Two per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .award-item {
+        width: 100%; /* One per row on very small screens */
+    }
+}
+
+.award-item a {
+    text-decoration: none; /* Removes the underline from links */
+}

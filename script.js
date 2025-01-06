@@ -11,7 +11,7 @@ function cancel() {
 }
 
 // Typewriter Effect
-const texts = ["DEVELOPER", "DESIGNER", "ENGINEER"];
+const texts = ["Developer", "Designer", "Engineer"];
 let speed = 100;
 const textElements = document.querySelector(".typewriter-text");
 let textIndex = 0;

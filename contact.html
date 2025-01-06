@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <title>Contact</title>
+    <title>About Me</title>
 </head>
 <body>
     <nav>
@@ -23,16 +23,34 @@
     <section class="any-section">
         <h1 class="any-header" data-aos="zoom-in" data-aos-duration="1000">Contact Me</h1>
 
-        <!-- Education Section -->
-        <div class="any-content">
-            <h2 data-aos="fade-up" data-aos-duration="1000">Contact for Resume!</h2>
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdI8zsrZKgoaETRwbW5GApqOndaBkdxRDw7sdnbQGtqWT7YKw/viewform?embedded=true" 
-                    width="640" height="721" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        <div class="contact-bubbles" data-aos="fade-up" data-aos-duration="1000">
+            <div class="bubble">
+                <h3>Email (Preferred)</h3>
+                <a href="mailto:singh.rohil@northeastern.edu" class="email-link">singh.rohil@northeastern.edu</a>
+            </div>
+            <div class="bubble">
+                <h3>Phone</h3>
+                <p>(908) 332-4839</p>
+            </div>
         </div>
+
+        
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdI8zsrZKgoaETRwbW5GApqOndaBkdxRDw7sdnbQGtqWT7YKw/viewform?embedded=true"
+         width="640" height="830" frameborder="0" marginheight="0" marginwidth="0" data-aos="fade-up" data-aos-duration="1000">Loading…</iframe>        
     </section>
 
     <footer style="padding: 20px; text-align: center;">
         <p>&copy; 2024 Rohil Singh. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 0,
+            duration: 1000,
+            once: true
+        });
+    </script>
 </body>
 </html>
