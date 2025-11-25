@@ -200,21 +200,60 @@ section {
     filter: drop-shadow(0 0 10px rgb(0, 129, 221));
 }
 
-/* Button Group */
+/* ==================== BUTTON STYLES ==================== */
 .btn-group {
     display: flex;
+    flex-direction: row;
     gap: 15px;
     margin-top: 20px;
     flex-wrap: wrap;
 }
 
-.content button {
-    padding: 12px 30px;
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    border: 2px solid rgb(0, 129, 221);
+    text-align: center;
+    white-space: nowrap;
+}
+
+.btn-primary {
     background-color: rgb(0, 129, 221);
     color: white;
-    border: none;
+}
+
+.btn-primary:hover {
+    transform: scale(1.05);
+    color: rgb(0, 129, 221);
+    background-color: transparent;
+    box-shadow: 0 0 20px rgb(0, 129, 221);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: rgb(0, 129, 221);
+}
+
+.btn-secondary:hover {
+    background-color: rgb(0, 129, 221);
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgb(0, 129, 221);
+}
+
+/* Legacy button support */
+.content button {
+    padding: 10px 20px;
+    background-color: rgb(0, 129, 221);
+    color: white;
+    border: 2px solid rgb(0, 129, 221);
     outline: none;
-    font-size: 1rem;
+    font-size: 0.95rem;
     font-weight: 600;
     border-radius: 5px;
     transition: 0.2s linear;
@@ -224,7 +263,6 @@ section {
 .content button:hover {
     scale: 1.05;
     color: rgb(0, 129, 221);
-    border: 2px solid rgb(0, 129, 221);
     background-color: transparent;
     box-shadow: 0 0 20px rgb(0, 129, 221);
 }
@@ -232,7 +270,6 @@ section {
 .content button.btn-secondary {
     background-color: transparent;
     color: rgb(0, 129, 221);
-    border: 2px solid rgb(0, 129, 221);
 }
 
 .content button.btn-secondary:hover {
@@ -689,6 +726,185 @@ section li {
 }
 
 /* ==================== CONTACT PAGE ==================== */
+.resume-section {
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+
+.resume-card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px 40px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.resume-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, #dc3545, #c82333);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+}
+
+.resume-info {
+    flex: 1;
+    min-width: 200px;
+    text-align: left;
+}
+
+.resume-info h3 {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.resume-info p {
+    font-size: 0.95rem;
+    color: #666;
+    margin: 0;
+}
+
+.resume-download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 28px;
+    background: linear-gradient(135deg, rgb(0, 129, 221), rgb(0, 100, 180));
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.resume-download-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 129, 221, 0.4);
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    max-width: 900px;
+    margin: 0 auto 40px;
+    padding: 0 20px;
+}
+
+.contact-card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-card:not(.no-hover):hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 129, 221, 0.2);
+}
+
+.contact-card.no-hover {
+    cursor: default;
+}
+
+.contact-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, rgb(0, 129, 221), rgb(0, 100, 180));
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.contact-card:not(.no-hover):hover .contact-icon {
+    transform: scale(1.1);
+}
+
+.contact-icon.linkedin {
+    background: linear-gradient(135deg, #0077b5, #005885);
+}
+
+.contact-icon.github {
+    background: linear-gradient(135deg, #333, #1a1a1a);
+}
+
+.contact-icon.phone {
+    background: linear-gradient(135deg, #28a745, #1e7e34);
+}
+
+.contact-card h3 {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.contact-card p {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0 0 10px;
+    word-break: break-word;
+}
+
+.contact-hint {
+    font-size: 0.8rem;
+    color: rgb(0, 129, 221);
+    font-weight: 500;
+}
+
+.availability-section {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 25px 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.availability-section h3 {
+    font-size: 1.2rem;
+    color: rgb(0, 129, 221);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.availability-section p {
+    font-size: 1rem;
+    color: #555;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.availability-section strong {
+    color: rgb(0, 129, 221);
+}
+
+/* Legacy contact styles */
 .contact-bubbles {
     display: flex;
     justify-content: center;
@@ -917,6 +1133,7 @@ section li {
     align-items: center;
     color: white;
     font-size: 1.5rem;
+    flex-shrink: 0;
 }
 
 .project-tech-stack {

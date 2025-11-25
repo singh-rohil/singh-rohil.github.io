@@ -20,45 +20,87 @@
                 <div class="link"><a href="awards.html">Awards</a></div>
                 <div class="link"><a href="contact.html">Contact</a></div>
             </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="awards.html">Awards</a>
+                <a href="contact.html">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
         </div>
     </nav>
 
     <section class="any-section">
-        <h1 class="any-header" data-aos="zoom-in" data-aos-duration="1000">Contact Me</h1>
+        <h1 class="any-header" data-aos="zoom-in" data-aos-duration="1000">Get In Touch</h1>
+        <p class="section-subtitle" data-aos="fade-up" data-aos-duration="1000">
+            I'm currently seeking co-op opportunities for January – August 2026. Feel free to reach out!
+        </p>
 
-        <div class="contact-bubbles" data-aos="fade-up" data-aos-duration="1000">
-            <div class="bubble">
-                <i class="fa-regular fa-envelope bubble-icon"></i>
-                <h3>Email (Preferred)</h3>
-                <a href="mailto:singh.rohil@northeastern.edu" class="email-link">singh.rohil@northeastern.edu</a>
+        <!-- Resume Download Section -->
+        <div class="resume-section" data-aos="fade-up" data-aos-duration="1000">
+            <div class="resume-card">
+                <div class="resume-icon">
+                    <i class="fa-solid fa-file-pdf"></i>
+                </div>
+                <div class="resume-info">
+                    <h3>My Resume</h3>
+                    <p>Download my resume to learn more about my experience, skills, and education.</p>
+                </div>
+                <a href="Resume_RohilSingh.pdf" target="_blank" download class="resume-download-btn">
+                    <i class="fa-solid fa-download"></i> Download Resume
+                </a>
             </div>
-            <div class="bubble">
-                <i class="fa-solid fa-phone bubble-icon"></i>
+        </div>
+
+        <!-- Contact Methods -->
+        <div class="contact-grid" data-aos="fade-up" data-aos-duration="1000">
+            <a href="mailto:singh.rohil@northeastern.edu" class="contact-card">
+                <div class="contact-icon">
+                    <i class="fa-regular fa-envelope"></i>
+                </div>
+                <h3>Email</h3>
+                <p>singh.rohil@northeastern.edu</p>
+                <span class="contact-hint">Click to send an email</span>
+            </a>
+
+            <a href="https://www.linkedin.com/in/rohil-singh-b81aa0218/" target="_blank" class="contact-card">
+                <div class="contact-icon linkedin">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+                <h3>LinkedIn</h3>
+                <p>linkedin.com/in/rohil-s</p>
+                <span class="contact-hint">Let's connect</span>
+            </a>
+
+            <a href="https://github.com/singh-rohil" target="_blank" class="contact-card">
+                <div class="contact-icon github">
+                    <i class="fa-brands fa-github"></i>
+                </div>
+                <h3>GitHub</h3>
+                <p>github.com/singh-rohil</p>
+                <span class="contact-hint">View my code</span>
+            </a>
+
+            <div class="contact-card no-hover">
+                <div class="contact-icon phone">
+                    <i class="fa-solid fa-phone"></i>
+                </div>
                 <h3>Phone</h3>
                 <p>(908) 332-4639</p>
+                <span class="contact-hint">Boston, MA</span>
             </div>
         </div>
 
-        <div class="social-contact" data-aos="fade-up" data-aos-duration="1000">
-            <h3>Connect With Me</h3>
-            <div class="social-links-contact">
-                <a href="https://github.com/singh-rohil" target="_blank" aria-label="GitHub Profile">
-                    <i class="fa-brands fa-github"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/rohil-singh-b81aa0218/" target="_blank" aria-label="LinkedIn Profile">
-                    <i class="fa-brands fa-linkedin"></i>
-                </a>
-                <a href="mailto:singh.rohil@northeastern.edu" aria-label="Email">
-                    <i class="fa-regular fa-envelope"></i>
-                </a>
-            </div>
+        <!-- Additional Info -->
+        <div class="availability-section" data-aos="fade-up" data-aos-duration="1000">
+            <h3><i class="fa-solid fa-calendar-check"></i> Availability</h3>
+            <p>I'm available for co-op positions from <strong>January 2026 to August 2026</strong>. I'm interested in roles in software development, data analysis, and AI/ML engineering.</p>
         </div>
 
-        <div class="form-container" data-aos="fade-up" data-aos-duration="1000">
-            <h3>Send a Message</h3>
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdI8zsrZKgoaETRwbW5GApqOndaBkdxRDw7sdnbQGtqWT7YKw/viewform?embedded=true"
-                width="640" height="830" frameborder="0" marginheight="0" marginwidth="0" title="Contact Form">Loading...</iframe>
-        </div>
     </section>
 
     <footer>
