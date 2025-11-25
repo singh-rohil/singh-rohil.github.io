@@ -6,6 +6,7 @@
     <meta name="description" content="Learn about Rohil Singh's education, experience, and technical skills in software development.">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <title>About | Rohil Singh</title>
 </head>
 <body>
@@ -19,6 +20,17 @@
                 <div class="link"><a href="awards.html">Awards</a></div>
                 <div class="link"><a href="contact.html">Contact</a></div>
             </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="awards.html">Awards</a>
+                <a href="contact.html">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
         </div>
     </nav>
 
@@ -27,8 +39,8 @@
 
         <!-- Personal Narrative Section -->
         <div class="narrative-section" data-aos="fade-up" data-aos-duration="1000">
-            <p>My path to computer science wasn't linear—it started in a high school health sciences academy and led through molecular biology research at Rutgers, where I first discovered my love for working with data. Analyzing DNA sequences and publishing findings to the NIH database showed me the power of computational tools to solve real-world problems.</p>
-            <p>Today, I combine that analytical background with software engineering to build solutions that make a difference. Whether I'm training AI models at Outlier, teaching math to students at Mathnasium, or developing the website for my nonprofit Coaching to Contribute, I bring the same curiosity and attention to detail to everything I create.</p>
+            <p>My path to computer science wasn't linear. It started in a high school health sciences academy and led through molecular biology research at Rutgers, where I first discovered my love for working with data. Analyzing DNA sequences and publishing findings to the NIH database showed me the power of computational tools to solve real-world problems.</p>
+            <p>Today, I combine that analytical background with software engineering to build solutions that make a difference. Whether I'm training AI models at Outlier, analyzing database modernization timelines at Viscosity, or mentoring students as a Teaching Assistant at Northeastern, I bring the same curiosity and attention to detail to everything I create.</p>
             <p>As a 3x National Champion in SkillsUSA Quiz Bowl and an Oracle Certified Java Programmer, I thrive on challenges that require both technical skill and quick thinking. I'm currently pursuing my Computer Science degree at Northeastern University, where I'm deepening my expertise in object-oriented design, databases, and software architecture.</p>
         </div>
 
@@ -44,16 +56,18 @@
                         <span class="skill-tag">SQL</span>
                         <span class="skill-tag">JavaScript</span>
                         <span class="skill-tag">HTML/CSS</span>
+                        <span class="skill-tag">C/C++</span>
+                        <span class="skill-tag">C#</span>
                     </div>
                 </div>
                 <div class="skill-category">
                     <h3><i class="fa-solid fa-layer-group"></i> Frameworks & Libraries</h3>
                     <div class="skill-tags">
-                        <span class="skill-tag">Flask</span>
                         <span class="skill-tag">NumPy</span>
                         <span class="skill-tag">Pandas</span>
                         <span class="skill-tag">Matplotlib</span>
                         <span class="skill-tag">Java Swing</span>
+                        <span class="skill-tag">JUnit</span>
                     </div>
                 </div>
                 <div class="skill-category">
@@ -63,7 +77,9 @@
                         <span class="skill-tag">MySQL</span>
                         <span class="skill-tag">MATLAB</span>
                         <span class="skill-tag">R-Studio</span>
-                        <span class="skill-tag">IntelliJ IDEA</span>
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">Excel</span>
+                        <span class="skill-tag">gdb</span>
                     </div>
                 </div>
                 <div class="skill-category">
@@ -88,16 +104,16 @@
                     <img src="neu.png" alt="Northeastern University Logo" class="education-logo">
                     <div>
                         <strong>Northeastern University Khoury College</strong> || <b>Boston, MA</b><br>
-                        Candidate for Bachelor of Science – Computer Science<br>
+                        Candidate for Bachelor of Science – Computer Science (GPA: 3.4/4.0)<br>
                         <em>Sep 2023 – May 2027</em><br>
-                        Relevant Coursework: Fundamentals of Computer Science, Discrete Structures, Mathematics of Data Models, Object-Oriented Design, Introduction to Databases
+                        Relevant Coursework: Algorithms, Object-Oriented Design, Computer Systems, Database Design, Discrete Structures, Foundations of Cybersecurity, Artificial Intelligence, Natural Language Processing, Machine Learning
                     </div>
                 </li>
                 <li class="education-item" data-aos="fade-up" data-aos-duration="1000">
                     <img src="rvcc.png" alt="Raritan Valley Community College Logo" class="education-logo">
                     <div>
                         <strong>Raritan Valley Community College</strong> || <b>Branchburg, NJ</b><br>
-                        Associate's Degree – General Science Pre-Health (Dual-Enrollment)<br>
+                        Associate's Degree – General Science Pre-Health (Dual-Enrollment, GPA: 3.7/4.0)<br>
                         <em>Sep 2020 – May 2023</em><br>
                         Relevant Coursework: Calculus I & II, English Composition I & II, General Physics I & II, Human Anatomy & Physiology I & II
                     </div>
@@ -106,7 +122,7 @@
                     <img src="scvths.png" alt="Somerset County Vocational Technical High School Logo" class="education-logo">
                     <div>
                         <strong>Academy for Health and Medical Sciences</strong> || <b>Bridgewater, NJ</b><br>
-                        High School Diploma<br>
+                        High School Diploma (GPA: 3.9/4.0)<br>
                         <em>Sep 2019 – Jun 2023</em>
                     </div>
                 </li>
@@ -118,9 +134,21 @@
         <div class="container">
             <div class="timeline">
                 <ul>
+                    <li onclick="openPopup('popup-ta')">
+                        <div class="timeline-content">
+                            <h3 class="date">Aug 2025 - Present</h3>
+                            <h1>Northeastern University <br> Khoury College</h1>
+                        </div>
+                    </li>
+                    <li onclick="openPopup('popup-viscosity')">
+                        <div class="timeline-content">
+                            <h3 class="date">May 2025 - Aug 2025</h3>
+                            <h1>Viscosity North America</h1>
+                        </div>
+                    </li>
                     <li onclick="openPopup('popup-outlier')">
                         <div class="timeline-content">
-                            <h3 class="date">May 2024 - Present</h3>
+                            <h3 class="date">May 2024 - May 2025</h3>
                             <h1>Outlier AI</h1>
                         </div>
                     </li>
@@ -153,12 +181,30 @@
         </div>
 
         <!-- Popups -->
+        <div class="popup" id="popup-ta">
+            <div class="popup-content">
+                <span class="close-btn" onclick="closePopup('popup-ta')">&times;</span>
+                <h3>Northeastern University Khoury College</h3>
+                <h4>Teaching Assistant</h4>
+                <p>As a Teaching Assistant at Northeastern University's Khoury College of Computer Sciences, I provide individualized mentorship during weekly 1-on-1 sessions, guiding students on coursework performance and academic growth. I delivered a virtual workshop on algorithmic problem-solving to over 300 students, providing real-time support and answering questions. Additionally, I evaluate student assignments and projects, delivering constructive feedback on code quality, algorithm design, and debugging techniques to help students develop strong programming foundations.</p>
+            </div>
+        </div>
+
+        <div class="popup" id="popup-viscosity">
+            <div class="popup-content">
+                <span class="close-btn" onclick="closePopup('popup-viscosity')">&times;</span>
+                <h3>Viscosity North America</h3>
+                <h4>Data Analyst Intern</h4>
+                <p>As a Data Analyst Intern at Viscosity North America, I analyzed timelines for database modernization projects across multiple clients, segmenting phases in MySQL and Excel to surface high-effort drivers. I quantified delay factors such as code conversion and test migration, modeling scenarios that identified code conversion as 35-45% of total project timeline. This analysis enabled me to present optimization recommendations including parallelization, automation, and consultant augmentation strategies to leadership, contributing to more efficient project planning and resource allocation.</p>
+            </div>
+        </div>
+
         <div class="popup" id="popup-outlier">
             <div class="popup-content">
                 <span class="close-btn" onclick="closePopup('popup-outlier')">&times;</span>
                 <h3>Outlier AI</h3>
-                <h4>Generative Mathematics AI Engineer</h4>
-                <p>With Outlier AI, I evaluated large language model (LLM)-generated mathematical responses to enhance chatbot efficiency and reliability. This involved processing complex mathematical datasets to train and refine chatbot algorithms, resulting in a 10% improvement in response accuracy. Additionally, I collaborated with Flamingo AI and Scale AI, addressing diverse technical queries that required advanced analyses using NumPy and MATLAB within Python. This role allowed me to develop a deep understanding of LLM capabilities while contributing to the optimization of AI-driven conversational tools.</p>            
+                <h4>Generative AI Mathematics Engineer (Part-Time)</h4>
+                <p>With Outlier AI, I evaluated large language model (LLM)-generated mathematical responses using rubric checks, streamlining prompts and datasets to improve answer accuracy by approximately 10%. This involved processing complex mathematical tasks using NumPy and MATLAB-style operations in Python to build training sets and edge-case regressions. Additionally, I collaborated with partner teams including Flamingo AI and Scale AI, addressing diverse technical queries involving vectorized array operations and linear algebra problems.</p>            
             </div>
         </div>
 
@@ -195,8 +241,8 @@
                 <a href="https://www.coachingtocontribute.org/" target="_blank">
                     <h3>Coaching to Contribute LLC</h3>
                 </a>
-                <h4>Co-Founder / Chief Technology Officer</h4>
-                <p>As the Co-Founder and Chief Technology Officer of Coaching to Contribute, I spearheaded initiatives to bridge donation gaps by organizing quarterly clothing drives, resulting in the overseas donation of over 40,000 pounds of clothing to underserved communities in India over five years. To support logistical expenses, I developed and conducted weekly Math and English classes for students in grades 5–10. Additionally, I leveraged JavaScript to build and maintain the organization's website, enabling greater reach and engagement with the community. This role reinforced my leadership, technical, and organizational skills while enabling impactful social contributions.</p>
+                <h4>Co-Founder</h4>
+                <p>As the Co-Founder of Coaching to Contribute, I spearheaded initiatives to bridge donation gaps by organizing quarterly clothing drives, resulting in the overseas donation of over 40,000 pounds of clothing to underserved communities in India over five years. To support logistical expenses, I developed and conducted weekly Math and English classes for students in grades 5–10. Additionally, I leveraged JavaScript on Wix to build and maintain the organization's website, enabling greater reach and engagement with the community. This role reinforced my leadership, technical, and organizational skills while enabling impactful social contributions.</p>
             </div>
         </div>
     </section>
@@ -205,7 +251,6 @@
         <p>&copy; 2025 Rohil Singh. All rights reserved.</p>
     </footer>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="script.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
