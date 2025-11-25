@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rohil Singh - Software Developer, 3x National Champion, Oracle Certified Java Programmer. Computer Science student at Northeastern University.">
+    <meta name="keywords" content="Rohil Singh, Software Developer, Java, Python, Northeastern University, Computer Science">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css">
-    <title>Rohil's Personal Website</title>
+    <title>Rohil Singh | Software Developer</title>
 </head>
 <body>
     <nav>
@@ -17,17 +19,19 @@
             <div class="links">
                 <div class="link"><a href="index.html">Home</a></div>
                 <div class="link"><a href="about.html">About</a></div>
+                <div class="link"><a href="projects.html">Projects</a></div>
                 <div class="link"><a href="awards.html">Awards</a></div>
                 <div class="link"><a href="contact.html">Contact</a></div>
             </div>            
-        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
-    </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
         <div class="dropdown">
             <div class="links">
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Awards</a>
-                <a href="#">Contact</a>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="awards.html">Awards</a>
+                <a href="contact.html">Contact</a>
                 <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
             </div>
         </div>
@@ -35,26 +39,29 @@
     <section>
         <div class="main-container">
             <div class="image" data-aos="zoom-out" data-aos-duration="3000">
-                <img src="pic.png" alt="">
+                <img src="pic.png" alt="Rohil Singh - Software Developer">
             </div>
             <div class="content">
-                <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">Hey I'm <span>Rohil</span></h1>
+                <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">Hey, I'm <span>Rohil</span></h1>
                 <div class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900">I'm a Software <span class="typewriter-text"></span><label for="">|</label></div>
-                <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100"> I am currently a Sophomore at Northeastern University's Khoury College of Computer Science. Through experiences with Outlier AI and Coaching To Contribute LLC I have gained professional experiences that have prepared me for anything the workforce has to offer.</p>
+                <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">I'm a Computer Science student at Northeastern University's Khoury College, an Oracle Certified Java Programmer, and a 3x National Champion. With experience in AI engineering at Outlier AI and as CTO of a nonprofit, I build software solutions that make a real impact.</p>
                 <div class="social-links">
-                    <a href="https://github.com/singh-rohil" target="_blank" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300">
+                    <a href="https://github.com/singh-rohil" target="_blank" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300" aria-label="GitHub Profile">
                         <i class="fa-brands fa-github"></i>
                     </a>
-                    <a href="mailto:singh.rohil@northeastern.edu" target="_blank" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400">
+                    <a href="mailto:singh.rohil@northeastern.edu" target="_blank" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400" aria-label="Email">
                         <i class="fa-regular fa-envelope"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/rohil-singh-b81aa0218/" target="_blank" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500">
+                    <a href="https://www.linkedin.com/in/rohil-singh-b81aa0218/" target="_blank" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500" aria-label="LinkedIn Profile">
                         <i class="fa-brands fa-linkedin"></i>
                     </a>
                 </div>
-                <div class="btn" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1800">
+                <div class="btn-group" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1800">
+                    <a href="projects.html">
+                        <button class="btn-secondary">View Projects</button>
+                    </a>
                     <a href="contact.html">
-                        <button>Request Resume</button>
+                        <button>Contact Me</button>
                     </a>
                 </div>                           
             </div>
@@ -65,7 +72,7 @@
       AOS.init({offset:0});
     </script>
     <script src="script.js"></script>
-    <footer style="padding: 20px; text-align: center;">
+    <footer>
         <p>&copy; 2025 Rohil Singh. All rights reserved.</p>
     </footer>
 </body>

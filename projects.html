@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Rohil Singh's software development projects including Java games, database systems, and web applications.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Projects | Rohil Singh</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Rohil <span>Singh</span></div>
+            <div class="links">
+                <div class="link"><a href="index.html">Home</a></div>
+                <div class="link"><a href="about.html">About</a></div>
+                <div class="link"><a href="projects.html">Projects</a></div>
+                <div class="link"><a href="awards.html">Awards</a></div>
+                <div class="link"><a href="contact.html">Contact</a></div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="any-section">
+        <h1 class="any-header" data-aos="zoom-in" data-aos-duration="1000">My Projects</h1>
+        <p class="section-subtitle" data-aos="fade-up" data-aos-duration="1000">A collection of software projects showcasing my skills in Java, Python, SQL, and web development</p>
+
+        <div class="projects-container">
+            
+            <!-- Project 1: MBTA -->
+            <div class="project-card" data-aos="fade-up" data-aos-duration="1000">
+                <div class="project-header">
+                    <div class="project-icon">
+                        <i class="fa-solid fa-train-subway"></i>
+                    </div>
+                    <div class="project-tech-stack">
+                        <span class="tech-tag python">Python</span>
+                        <span class="tech-tag sql">SQL</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">Pandas</span>
+                        <span class="tech-tag">Matplotlib</span>
+                    </div>
+                </div>
+                <h2 class="project-title">MBTA Transit Performance Analysis</h2>
+                <p class="project-description">
+                    Comprehensive database project analyzing Boston's MBTA transit system performance before and after the 2023 CEO change. Built a relational database from 5 real-world datasets (ridership, punctuality, speed restrictions, commuter rail, ferry) containing over 100,000 records.
+                </p>
+                <div class="project-features">
+                    <h4>Key Features</h4>
+                    <ul>
+                        <li>Designed Entity-Relationship diagram for complex multi-table database</li>
+                        <li>Developed 10+ SQL queries with joins, subqueries, and stored procedures</li>
+                        <li>Created Python visualizations analyzing ridership trends and on-time performance</li>
+                        <li>Answered business questions like "Did commuter rail ridership increase when ferry performance declined?"</li>
+                    </ul>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/singh-rohil/MBTA_Project" target="_blank" class="project-btn">
+                        <i class="fa-brands fa-github"></i> View on GitHub
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 2: Three Trios -->
+            <div class="project-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                <div class="project-header">
+                    <div class="project-icon">
+                        <i class="fa-solid fa-chess"></i>
+                    </div>
+                    <div class="project-tech-stack">
+                        <span class="tech-tag java">Java</span>
+                        <span class="tech-tag">Swing GUI</span>
+                        <span class="tech-tag">MVC</span>
+                    </div>
+                </div>
+                <h2 class="project-title">Three Trios – Strategic Card Game with AI</h2>
+                <p class="project-description">
+                    Two-player strategic card game with full GUI and AI opponents. Players place cards with directional attack values on a grid, battling adjacent opponent cards to flip them. Features complete MVC architecture with three distinct AI strategies.
+                </p>
+                <div class="project-features">
+                    <h4>Key Features</h4>
+                    <ul>
+                        <li>3 AI strategies: Maximize Flips, Corner Defense, Minimize Vulnerability</li>
+                        <li>Full Swing GUI with mouse click handling and visual feedback</li>
+                        <li>Battle phase with chain reaction mechanics</li>
+                        <li>Configuration file readers for custom decks and grid layouts</li>
+                        <li>Adapter pattern for third-party view integration</li>
+                    </ul>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/singh-rohil/ThreeTriosGame" target="_blank" class="project-btn">
+                        <i class="fa-brands fa-github"></i> View on GitHub
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 3: LightEmAll -->
+            <div class="project-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <div class="project-header">
+                    <div class="project-icon">
+                        <i class="fa-solid fa-lightbulb"></i>
+                    </div>
+                    <div class="project-tech-stack">
+                        <span class="tech-tag java">Java</span>
+                        <span class="tech-tag">Graph Algorithms</span>
+                        <span class="tech-tag">BFS</span>
+                        <span class="tech-tag">Kruskal's MST</span>
+                    </div>
+                </div>
+                <h2 class="project-title">LightEmAll – Wire Puzzle Game</h2>
+                <p class="project-description">
+                    Interactive puzzle game where players rotate wire tiles to connect all cells to a power source. Generates solvable puzzles using Kruskal's Minimum Spanning Tree algorithm with randomized edge weights, ensuring every puzzle has a valid solution.
+                </p>
+                <div class="project-features">
+                    <h4>Key Features</h4>
+                    <ul>
+                        <li>Kruskal's MST algorithm for guaranteed-solvable puzzle generation</li>
+                        <li>Breadth-First Search (BFS) for power propagation through connected tiles</li>
+                        <li>Horizontal/vertical bias modes for varied puzzle styles</li>
+                        <li>Moveable power station with keyboard controls</li>
+                        <li>Score tracking with clicks, timer, and best score</li>
+                    </ul>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/singh-rohil/LightEmAll-Java" target="_blank" class="project-btn">
+                        <i class="fa-brands fa-github"></i> View on GitHub
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 4: Minesweeper -->
+            <div class="project-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                <div class="project-header">
+                    <div class="project-icon">
+                        <i class="fa-solid fa-bomb"></i>
+                    </div>
+                    <div class="project-tech-stack">
+                        <span class="tech-tag java">Java</span>
+                        <span class="tech-tag">Java Swing</span>
+                        <span class="tech-tag">OOP</span>
+                    </div>
+                </div>
+                <h2 class="project-title">Minesweeper Game</h2>
+                <p class="project-description">
+                    Full implementation of the classic Minesweeper game with graphical interface. Features multiple difficulty levels that dynamically scale board size and mine count, implementing all core game mechanics with clean object-oriented design.
+                </p>
+                <div class="project-features">
+                    <h4>Key Features</h4>
+                    <ul>
+                        <li>5 difficulty levels with dynamic board scaling (8x10 to 40x50)</li>
+                        <li>Neighbor detection algorithm for numbered cell calculation</li>
+                        <li>Mine placement with collision detection</li>
+                        <li>Flag system and recursive cell revealing</li>
+                        <li>Comprehensive unit testing suite</li>
+                    </ul>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/singh-rohil/Minesweeper-Java-" target="_blank" class="project-btn">
+                        <i class="fa-brands fa-github"></i> View on GitHub
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 5: SoloRed7 -->
+            <div class="project-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                <div class="project-header">
+                    <div class="project-icon">
+                        <i class="fa-solid fa-clone"></i>
+                    </div>
+                    <div class="project-tech-stack">
+                        <span class="tech-tag java">Java</span>
+                        <span class="tech-tag">MVC Pattern</span>
+                        <span class="tech-tag">Game Logic</span>
+                    </div>
+                </div>
+                <h2 class="project-title">SoloRed7 – Solo Card Game</h2>
+                <p class="project-description">
+                    Text-based implementation of a solo card game inspired by Red7. Players strategically play cards to palettes or a central canvas to manipulate winning conditions. Each color represents a different scoring rule, creating complex strategic decisions.
+                </p>
+                <div class="project-features">
+                    <h4>Key Features</h4>
+                    <ul>
+                        <li>5 distinct scoring rules: Red (highest), Orange (most of number), Blue (most colors), Indigo (longest run), Violet (most below 4)</li>
+                        <li>Palette management with tiebreaker logic</li>
+                        <li>Full game state validation and win/loss detection</li>
+                        <li>Advanced game variant with additional mechanics</li>
+                        <li>Text-based controller for user interaction</li>
+                    </ul>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/singh-rohil/SoloRed7" target="_blank" class="project-btn">
+                        <i class="fa-brands fa-github"></i> View on GitHub
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 6: Portfolio Website -->
+            <div class="project-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                <div class="project-header">
+                    <div class="project-icon">
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+                    <div class="project-tech-stack">
+                        <span class="tech-tag html">HTML5</span>
+                        <span class="tech-tag css">CSS3</span>
+                        <span class="tech-tag js">JavaScript</span>
+                        <span class="tech-tag">AOS.js</span>
+                    </div>
+                </div>
+                <h2 class="project-title">Personal Portfolio Website</h2>
+                <p class="project-description">
+                    Responsive personal portfolio website (this site!) featuring modern design with scroll animations, interactive timeline for work experience, award showcase with hover effects, and embedded contact form. Built with vanilla JavaScript and CSS animations.
+                </p>
+                <div class="project-features">
+                    <h4>Key Features</h4>
+                    <ul>
+                        <li>Fully responsive design for mobile and desktop</li>
+                        <li>AOS (Animate On Scroll) library integration</li>
+                        <li>Interactive experience timeline with popup modals</li>
+                        <li>Typewriter text effect animation</li>
+                        <li>Mobile hamburger menu navigation</li>
+                    </ul>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/singh-rohil/singh-rohil.github.io" target="_blank" class="project-btn">
+                        <i class="fa-brands fa-github"></i> View on GitHub
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Rohil Singh. All rights reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 0,
+            duration: 1000,
+            once: true
+        });
+    </script>
+</body>
+</html>
