@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Rohil Singh's education, experience, and technical skills in software development.">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <title>About Me</title>
+    <title>About | Rohil Singh</title>
 </head>
 <body>
     <nav>
@@ -14,6 +15,7 @@
             <div class="links">
                 <div class="link"><a href="index.html">Home</a></div>
                 <div class="link"><a href="about.html">About</a></div>
+                <div class="link"><a href="projects.html">Projects</a></div>
                 <div class="link"><a href="awards.html">Awards</a></div>
                 <div class="link"><a href="contact.html">Contact</a></div>
             </div>
@@ -23,12 +25,67 @@
     <section class="any-section">
         <h1 class="any-header" data-aos="zoom-in" data-aos-duration="1000">About Me</h1>
 
+        <!-- Personal Narrative Section -->
+        <div class="narrative-section" data-aos="fade-up" data-aos-duration="1000">
+            <p>My path to computer science wasn't linear—it started in a high school health sciences academy and led through molecular biology research at Rutgers, where I first discovered my love for working with data. Analyzing DNA sequences and publishing findings to the NIH database showed me the power of computational tools to solve real-world problems.</p>
+            <p>Today, I combine that analytical background with software engineering to build solutions that make a difference. Whether I'm training AI models at Outlier, teaching math to students at Mathnasium, or developing the website for my nonprofit Coaching to Contribute, I bring the same curiosity and attention to detail to everything I create.</p>
+            <p>As a 3x National Champion in SkillsUSA Quiz Bowl and an Oracle Certified Java Programmer, I thrive on challenges that require both technical skill and quick thinking. I'm currently pursuing my Computer Science degree at Northeastern University, where I'm deepening my expertise in object-oriented design, databases, and software architecture.</p>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="skills-section" data-aos="fade-up" data-aos-duration="1000">
+            <h2>Technical Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3><i class="fa-solid fa-code"></i> Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">HTML/CSS</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fa-solid fa-layer-group"></i> Frameworks & Libraries</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Flask</span>
+                        <span class="skill-tag">NumPy</span>
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">Matplotlib</span>
+                        <span class="skill-tag">Java Swing</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fa-solid fa-screwdriver-wrench"></i> Tools & Platforms</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">MATLAB</span>
+                        <span class="skill-tag">R-Studio</span>
+                        <span class="skill-tag">IntelliJ IDEA</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fa-solid fa-brain"></i> Concepts</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">OOP</span>
+                        <span class="skill-tag">MVC Architecture</span>
+                        <span class="skill-tag">Graph Algorithms</span>
+                        <span class="skill-tag">Database Design</span>
+                        <span class="skill-tag">Data Visualization</span>
+                        <span class="skill-tag">AI/ML Training</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Education Section -->
         <div class="any-content">
             <h2 data-aos="fade-up" data-aos-duration="1000">Education</h2>
             <ul>
                 <li class="education-item" data-aos="fade-up" data-aos-duration="1000">
-                    <img src="neu.png" alt="Northeastern University" class="education-logo">
+                    <img src="neu.png" alt="Northeastern University Logo" class="education-logo">
                     <div>
                         <strong>Northeastern University Khoury College</strong> || <b>Boston, MA</b><br>
                         Candidate for Bachelor of Science – Computer Science<br>
@@ -37,16 +94,16 @@
                     </div>
                 </li>
                 <li class="education-item" data-aos="fade-up" data-aos-duration="1000">
-                    <img src="rvcc.png" alt="Raritan Valley Community College" class="education-logo">
+                    <img src="rvcc.png" alt="Raritan Valley Community College Logo" class="education-logo">
                     <div>
                         <strong>Raritan Valley Community College</strong> || <b>Branchburg, NJ</b><br>
-                        Associate’s Degree – General Science Pre-Health (Dual-Enrollment)<br>
+                        Associate's Degree – General Science Pre-Health (Dual-Enrollment)<br>
                         <em>Sep 2020 – May 2023</em><br>
                         Relevant Coursework: Calculus I & II, English Composition I & II, General Physics I & II, Human Anatomy & Physiology I & II
                     </div>
                 </li>
                 <li class="education-item" data-aos="fade-up" data-aos-duration="1000">
-                    <img src="scvths.png" alt="Academy for Health and Medical Sciences" class="education-logo">
+                    <img src="scvths.png" alt="Somerset County Vocational Technical High School Logo" class="education-logo">
                     <div>
                         <strong>Academy for Health and Medical Sciences</strong> || <b>Bridgewater, NJ</b><br>
                         High School Diploma<br>
@@ -96,15 +153,13 @@
         </div>
 
         <!-- Popups -->
-
         <div class="popup" id="popup-outlier">
             <div class="popup-content">
-                <span class="close-btn" onclick="closePopup('popup-outlier-2024')">&times;</span>
+                <span class="close-btn" onclick="closePopup('popup-outlier')">&times;</span>
                 <h3>Outlier AI</h3>
                 <h4>Generative Mathematics AI Engineer</h4>
-                <p>With Outlier AI, I evaluated large language model (LLM)-generated mathematical responses to enhance chatbot efficiency and reliability. This involved processing complex mathematical datasets to train and refine chatbot algorithms, resulting in a 10% improvement in response accuracy. Additionally, I collaborated with Flamingo AI and Scale AI, addressing diverse technical queries that required advanced analyses using NumPy and MATLAB within Python. This role allowed me to develop a deep understanding of LLM capabilities while contributing to the optimization of AI-driven conversational tools.
-                </p>            
-        </div>
+                <p>With Outlier AI, I evaluated large language model (LLM)-generated mathematical responses to enhance chatbot efficiency and reliability. This involved processing complex mathematical datasets to train and refine chatbot algorithms, resulting in a 10% improvement in response accuracy. Additionally, I collaborated with Flamingo AI and Scale AI, addressing diverse technical queries that required advanced analyses using NumPy and MATLAB within Python. This role allowed me to develop a deep understanding of LLM capabilities while contributing to the optimization of AI-driven conversational tools.</p>            
+            </div>
         </div>
 
         <div class="popup" id="popup-ems">
@@ -112,8 +167,7 @@
                 <span class="close-btn" onclick="closePopup('popup-ems')">&times;</span>
                 <h3>East Millstone First Aid Squad</h3>
                 <h4>Emergency Medical Services</h4>
-                <p>As a part of East Millstone First Aid Squad, I provided prompt and effective emergency medical services in diverse and often high-pressure settings, including accident scenes and public events. My role involved conducting thorough patient assessments, monitoring vital signs, evaluating injuries, and gathering critical medical histories to determine appropriate interventions. This experience honed my ability to remain calm under pressure and deliver compassionate care while ensuring optimal outcomes for patients.
-                </p>
+                <p>As a part of East Millstone First Aid Squad, I provided prompt and effective emergency medical services in diverse and often high-pressure settings, including accident scenes and public events. My role involved conducting thorough patient assessments, monitoring vital signs, evaluating injuries, and gathering critical medical histories to determine appropriate interventions. This experience honed my ability to remain calm under pressure and deliver compassionate care while ensuring optimal outcomes for patients.</p>
             </div>
         </div>
 
@@ -122,18 +176,16 @@
                 <span class="close-btn" onclick="closePopup('popup-waksman')">&times;</span>
                 <h3>Rutgers University Waksman Institute</h3>
                 <h4>Biology Researcher</h4>
-                <p>As a student researcher at the Rutgers University Waksman Institute, I contributed to a molecular biology research project focused on analyzing DNA sequences of Landoltia punctata, a freshwater aquatic plant. Utilizing tools such as R-Studio, FinchTV, and 4Peaks, I conducted DNA/RNA sequencing and data manipulation, resulting in publications in the NCBI database. This opportunity allowed me to deepen my understanding of bioinformatics and molecular analysis while engaging in meaningful research with real-world applications.
-                </p>
+                <p>As a student researcher at the Rutgers University Waksman Institute, I contributed to a molecular biology research project focused on analyzing DNA sequences of Landoltia punctata, a freshwater aquatic plant. Utilizing tools such as R-Studio, FinchTV, and 4Peaks, I conducted DNA/RNA sequencing and data manipulation, resulting in publications in the NCBI database. This opportunity allowed me to deepen my understanding of bioinformatics and molecular analysis while engaging in meaningful research with real-world applications.</p>
             </div>
         </div>
 
         <div class="popup" id="popup-math">
             <div class="popup-content">
-                <span class="close-btn" onclick="closePopup('popup-waksman')">&times;</span>
+                <span class="close-btn" onclick="closePopup('popup-math')">&times;</span>
                 <h3>Mathnasium of Hillsborough</h3>
                 <h4>Mathematics Instructor / Operations Supervisor</h4>
-                <p>As an instructor at Mathnasium of Hillsborough, I provided personalized math instruction to students in grades K–10, covering topics ranging from foundational mathematics to advanced subjects such as Pre-Algebra, Geometry, and Algebra I & II. In addition to teaching, I graded student work and developed supplementary learning materials tailored to individual needs, ensuring students grasped complex mathematical concepts with confidence. This role strengthened my ability to communicate effectively, adapt teaching strategies to diverse learning styles, and foster a positive learning environment for academic growth.
-                </p>
+                <p>As an instructor at Mathnasium of Hillsborough, I provided personalized math instruction to students in grades K–10, covering topics ranging from foundational mathematics to advanced subjects such as Pre-Algebra, Geometry, and Algebra I & II. In addition to teaching, I graded student work and developed supplementary learning materials tailored to individual needs, ensuring students grasped complex mathematical concepts with confidence. This role strengthened my ability to communicate effectively, adapt teaching strategies to diverse learning styles, and foster a positive learning environment for academic growth.</p>
             </div>
         </div>
 
@@ -141,18 +193,19 @@
             <div class="popup-content">
                 <span class="close-btn" onclick="closePopup('popup-ctc')">&times;</span>
                 <a href="https://www.coachingtocontribute.org/" target="_blank">
-                <h3>Coaching to Contribute LLC</h3>
+                    <h3>Coaching to Contribute LLC</h3>
                 </a>
                 <h4>Co-Founder / Chief Technology Officer</h4>
-                <p>As the Co-Founder and Chief Technology Officer of Coaching to Contribute, I spearheaded initiatives to bridge donation gaps by organizing quarterly clothing drives, resulting in the overseas donation of over 40,000 pounds of clothing to underserved communities in India over five years. To support logistical expenses, I developed and conducted weekly Math and English classes for students in grades 5–10. Additionally, I leveraged JavaScript to build and maintain the organization’s website, enabling greater reach and engagement with the community. This role reinforced my leadership, technical, and organizational skills while enabling impactful social contributions.                </p>
+                <p>As the Co-Founder and Chief Technology Officer of Coaching to Contribute, I spearheaded initiatives to bridge donation gaps by organizing quarterly clothing drives, resulting in the overseas donation of over 40,000 pounds of clothing to underserved communities in India over five years. To support logistical expenses, I developed and conducted weekly Math and English classes for students in grades 5–10. Additionally, I leveraged JavaScript to build and maintain the organization's website, enabling greater reach and engagement with the community. This role reinforced my leadership, technical, and organizational skills while enabling impactful social contributions.</p>
             </div>
         </div>
     </section>
 
-    <footer style="padding: 20px; text-align: center;">
-        <p>&copy; 2024 Rohil Singh. All rights reserved.</p>
+    <footer>
+        <p>&copy; 2025 Rohil Singh. All rights reserved.</p>
     </footer>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="script.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
